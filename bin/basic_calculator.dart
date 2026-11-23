@@ -37,7 +37,6 @@ void main() {
     stdout.write("Operator (+ - * / %), 'history', or 'exit': ");
     String? opInput = stdin.readLineSync();
     if (opInput == null) {
-      // EOF (Ctrl+D / piped input ended): exit cleanly like 'exit'.
       print("\n=== Final Result: $result ===");
       if (history.isNotEmpty) {
         print("\n=== Calculation History ===");
